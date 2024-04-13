@@ -103,7 +103,6 @@ fn self_referencing_impl(
             #async_try_builder_def
             #async_send_try_builder_def
             #with_all_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #with_all_mut_struct_def
             #[allow(clippy::too_many_arguments)] //Unknown
             #(#with_errors)*
