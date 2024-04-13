@@ -91,6 +91,7 @@ fn self_referencing_impl(
         mod #mod_name {
             use super::*;
             #[doc="The self-referencing struct."]
+            #[allow(clippy::too_many_arguments)]
             #actual_struct_def
             #internal_struct_def
             #drop_impl
@@ -131,7 +132,6 @@ fn self_referencing_impl(
 }
 
 #[proc_macro_attribute]
-#[allow(clippy::too_many_arguments)]
 pub fn self_referencing(attr: TokenStream, item: TokenStream) -> TokenStream {
     let mut options = Options {
         do_no_doc: false,
