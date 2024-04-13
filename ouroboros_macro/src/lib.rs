@@ -99,7 +99,6 @@ fn self_referencing_impl(
             #builder_def
             #async_builder_def
             #async_send_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #try_builder_def
             #[allow(clippy::too_many_arguments)] //Unknown
             #async_try_builder_def
