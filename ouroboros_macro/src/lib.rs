@@ -94,13 +94,9 @@ fn self_referencing_impl(
             #actual_struct_def
             #internal_struct_def
             #drop_impl
-            #[allow(clippy::too_many_arguments)]
             #borrowchk_summoner
-            #[allow(clippy::too_many_arguments)]
             #builder_def
-            #[allow(clippy::too_many_arguments)]
             #async_builder_def
-            #[allow(clippy::too_many_arguments)]
             #async_send_builder_def
             #[allow(clippy::too_many_arguments)]
             #try_builder_def
