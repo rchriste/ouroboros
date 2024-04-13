@@ -88,10 +88,10 @@ fn self_referencing_impl(
     let generic_where = &info.generics.where_clause;
     Ok(TokenStream::from(quote! {
         #[doc="Encapsulates implementation details for a self-referencing struct. This module is only visible when using --document-private-items."]
+        #[allow(clippy::too_many_arguments)]
         mod #mod_name {
             use super::*;
             #[doc="The self-referencing struct."]
-            #[allow(clippy::too_many_arguments)]
             #actual_struct_def
             #internal_struct_def
             #drop_impl
