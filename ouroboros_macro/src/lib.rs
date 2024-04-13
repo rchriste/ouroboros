@@ -131,6 +131,7 @@ fn self_referencing_impl(
 }
 
 #[proc_macro_attribute]
+#[allow(clippy::too_many_arguments)]
 pub fn self_referencing(attr: TokenStream, item: TokenStream) -> TokenStream {
     let mut options = Options {
         do_no_doc: false,
