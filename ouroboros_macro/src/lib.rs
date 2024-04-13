@@ -106,7 +106,6 @@ fn self_referencing_impl(
             #with_all_mut_struct_def
             #(#with_errors)*
             #heads_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #impls
             #[allow(clippy::too_many_arguments)] //Unknown
             impl <#generic_params> #struct_name <#(#generic_args),*> #generic_where {
