@@ -104,7 +104,6 @@ fn self_referencing_impl(
             #async_send_try_builder_def
             #with_all_struct_def
             #with_all_mut_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #(#with_errors)*
             #[allow(clippy::too_many_arguments)] //Unknown
             #heads_struct_def
