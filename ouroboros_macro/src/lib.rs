@@ -94,7 +94,6 @@ fn self_referencing_impl(
             #actual_struct_def
             #internal_struct_def
             #drop_impl
-            #[allow(clippy::too_many_arguments)]
             #borrowchk_summoner
             #[allow(clippy::too_many_arguments)]
             #builder_def
