@@ -96,7 +96,6 @@ fn self_referencing_impl(
             #drop_impl
             #[allow(clippy::too_many_arguments)] //This one makes a difference, verified
             #borrowchk_summoner
-            #[allow(clippy::too_many_arguments)] //Unknown
             #builder_def
             #[allow(clippy::too_many_arguments)] //Unknown
             #async_builder_def
