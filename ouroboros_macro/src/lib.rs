@@ -90,43 +90,78 @@ fn self_referencing_impl(
         #[doc="Encapsulates implementation details for a self-referencing struct. This module is only visible when using --document-private-items."]
         #[allow(clippy::too_many_arguments)]
         mod #mod_name {
+            #[allow(clippy::too_many_arguments)]
             use super::*;
+            #[allow(clippy::too_many_arguments)]
             #[doc="The self-referencing struct."]
+            #[allow(clippy::too_many_arguments)]
             #actual_struct_def
+            #[allow(clippy::too_many_arguments)]
             #internal_struct_def
+            #[allow(clippy::too_many_arguments)]
             #drop_impl
+            #[allow(clippy::too_many_arguments)]
             #borrowchk_summoner
+            #[allow(clippy::too_many_arguments)]
             #builder_def
+            #[allow(clippy::too_many_arguments)]
             #async_builder_def
+            #[allow(clippy::too_many_arguments)]
             #async_send_builder_def
+            #[allow(clippy::too_many_arguments)]
             #try_builder_def
+            #[allow(clippy::too_many_arguments)]
             #async_try_builder_def
+            #[allow(clippy::too_many_arguments)]
             #async_send_try_builder_def
+            #[allow(clippy::too_many_arguments)]
             #with_all_struct_def
+            #[allow(clippy::too_many_arguments)]
             #with_all_mut_struct_def
+            #[allow(clippy::too_many_arguments)]
             #(#with_errors)*
+            #[allow(clippy::too_many_arguments)]
             #heads_struct_def
+            #[allow(clippy::too_many_arguments)]
             #impls
+            #[allow(clippy::too_many_arguments)]
             impl <#generic_params> #struct_name <#(#generic_args),*> #generic_where {
+                #[allow(clippy::too_many_arguments)]
                 #constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #async_constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #async_send_constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #try_constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #async_try_constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #async_send_try_constructor_def
+                #[allow(clippy::too_many_arguments)]
                 #(#with_defs)*
                 #with_all_fn_def
+                #[allow(clippy::too_many_arguments)]
                 #with_all_mut_fn_def
+                #[allow(clippy::too_many_arguments)]
                 #into_heads_fn
             }
+            #[allow(clippy::too_many_arguments)]
             #type_asserts_def
         }
+        #[allow(clippy::too_many_arguments)]
         #visibility use #mod_name :: #struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #builder_struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #async_builder_struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #async_send_builder_struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #try_builder_struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #async_try_builder_struct_name;
+        #[allow(clippy::too_many_arguments)]
         #extra_visibility use #mod_name :: #async_send_try_builder_struct_name;
     }))
 }
