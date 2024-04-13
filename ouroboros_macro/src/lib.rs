@@ -96,29 +96,17 @@ fn self_referencing_impl(
             #drop_impl
             #[allow(clippy::too_many_arguments)] //This one makes a difference, verified
             #borrowchk_summoner
-            #[allow(clippy::too_many_arguments)] //Unknown
             #builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #async_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #async_send_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #try_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #async_try_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #async_send_try_builder_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #with_all_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #with_all_mut_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #(#with_errors)*
-            #[allow(clippy::too_many_arguments)] //Unknown
             #heads_struct_def
-            #[allow(clippy::too_many_arguments)] //Unknown
             #impls
-            #[allow(clippy::too_many_arguments)] //Unknown
             impl <#generic_params> #struct_name <#(#generic_args),*> #generic_where {
                 #[allow(clippy::too_many_arguments)] //Unknown
                 #constructor_def
