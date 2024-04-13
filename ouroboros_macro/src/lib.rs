@@ -89,7 +89,6 @@ fn self_referencing_impl(
     Ok(TokenStream::from(quote! {
         #[doc="Encapsulates implementation details for a self-referencing struct. This module is only visible when using --document-private-items."]
         mod #mod_name {
-            #[allow(clippy::too_many_arguments)]
             use super::*;
             #[allow(clippy::too_many_arguments)]
             #[doc="The self-referencing struct."]
