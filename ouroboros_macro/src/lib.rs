@@ -90,13 +90,9 @@ fn self_referencing_impl(
         #[doc="Encapsulates implementation details for a self-referencing struct. This module is only visible when using --document-private-items."]
         mod #mod_name {
             use super::*;
-            #[allow(clippy::too_many_arguments)]
             #[doc="The self-referencing struct."]
-            #[allow(clippy::too_many_arguments)]
             #actual_struct_def
-            #[allow(clippy::too_many_arguments)]
             #internal_struct_def
-            #[allow(clippy::too_many_arguments)]
             #drop_impl
             #[allow(clippy::too_many_arguments)]
             #borrowchk_summoner
